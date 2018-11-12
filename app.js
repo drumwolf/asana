@@ -12,4 +12,7 @@ app.set('view engine', 'hbs');	// Use Handlebars view engine
 // ROUTES
 app.get('/', (req,res) => res.render('index') );
 
+// STATIC FILES
+app.use(express.static('assets'));
+
 app.listen(port, () => console.log(`Example app listening on port ${port}...`) );
